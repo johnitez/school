@@ -1,0 +1,120 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+<div class="search-section">
+    <a class="close-search" href="#"></a>
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <form method="post" action="#" class="w-50">
+            <div class="row">
+                <div class="col-10">
+                    <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." /> 
+                </div>
+                <div class="col-2 mt-3">
+                     <button type="submit" class="btn bg-transparent text-white"> <i class="fas fa-search"></i> </button>
+                </div>
+            </div>
+        </form>
+    </div>
+         
+</div>
+    
+<!-- Loading Screen -->
+<div id="ju-loading-screen">
+  <div class="sk-double-bounce">
+    <div class="sk-child sk-double-bounce1"></div>
+    <div class="sk-child sk-double-bounce2"></div>
+  </div>
+</div>
+<!--end loading screen-->
+
+<!-- Start Top Header -->
+<div class="fables-forth-background-color fables-top-header-signin">
+    <div class="container">
+        <div class="row" id="top-row">
+            <div class="col-12 col-sm-5 col-lg-4 text-right">
+                <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> Phone :  (+254) 746 471 338</p>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3 text-right">
+                <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span> Email: 203jmw@gmail.com</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+ 
+<!-- /End Top Header -->
+
+<!-- Start Fables Navigation -->
+<div class="fables-navigation fables-main-background-color py-3 py-lg-0">
+    <div class="container">
+               <div class="row">
+                   <div class="col-12 col-md-10 col-lg-9 pr-md-0">                       
+                       <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
+         
+                            <a class="navbar-brand pl-0" href="index.html"><img src="{% static 'usa/assets/custom/images/logo3.png' %}" class="#"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fables-iconmenu-icon text-white font-16"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fablesNavDropdown"> 
+
+                                <ul class="navbar-nav mx-auto fables-nav">   
+                                    <li class="#">
+                                        <a class="nav-link" href="home.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="#">
+                                        <a class="nav-link" href="about.html">
+                                            About Us
+                                        </a>
+                                    <li class="#">
+                                        <a class="nav-link" href="testimonials.html">
+                                            Testmonials
+                                        </a>
+                                    <li class="active">
+                                        <a class="nav-link" href="contact.html" id="sub-nav7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Contact Us
+                                        </a>
+                                    </li>  
+                                </ul> 
+                        </nav>
+                    </div>
+                
+                </div>
+    </div>
+</div>
+
+     
+<!-- Start Header -->
+<div class="fables-header fables-after-overlay">
+    <div class="container"> 
+         <h2 class="fables-page-title fables-second-border-color">Contact Us</h2>
+    </div>
+</div>  
+<!-- /End Header -->
+     
+<!-- Start Breadcrumbs -->
+<div class="fables-light-background-color">
+    <div class="container"> 
+        <nav aria-label="breadcrumb">
+          <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+            <li class="breadcrumb-item"><a href="home.html" class="fables-second-text-color">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Get In Touch</li>
+          </ol>
+        </nav> 
+    </div>
+</div>
+<!-- /End Breadcrumbs -->
+
+
+{% if your_name %}
+    <center>
+        <h2>Thanks {{ your_name }}!</h2>
+        <p>We received your email and will respond shortly</p>
+    </center>
+    <br/><br/><br/>
+    {% else %}
+{% endif %}
+{% endblock %}

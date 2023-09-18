@@ -1,0 +1,205 @@
+
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+
+<div class="search-section">
+    <a class="close-search" href="#"></a>
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <form method="post" action="#" class="w-50">
+            <div class="row">
+                <div class="col-10">
+                    <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." /> 
+                </div>
+                <div class="col-2 mt-3">
+                     <button type="submit" class="btn bg-transparent text-white"> <i class="fas fa-search"></i> </button>
+                </div>
+            </div>
+        </form>
+    </div>
+         
+</div>
+    
+<!-- Loading Screen -->
+<div id="ju-loading-screen">
+  <div class="sk-double-bounce">
+    <div class="sk-child sk-double-bounce1"></div>
+    <div class="sk-child sk-double-bounce2"></div>
+  </div>
+</div>
+    
+<!-- Start Top Header -->
+<div class="fables-forth-background-color fables-top-header-signin">
+    <div class="container">
+        <div class="row" id="top-row">
+            <div class="col-12 col-sm-5 col-lg-4 text-right">
+                <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> Phone :  (+254) 746 471 338</p>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3 text-right">
+                <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span> Email: 203jmw@gmail.com.com</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+ 
+<!-- /End Top Header -->
+
+<!-- Start Fables Navigation -->
+<div class="fables-navigation fables-main-background-color py-3 py-lg-0">
+    <div class="container">
+               <div class="row">
+                   <div class="col-12 col-md-10 col-lg-9 pr-md-0">                       
+                       <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
+         
+                            <a class="navbar-brand pl-0" href="index.html"><img src="{% static 'usa/assets/custom/images/logo3.png' %}" ></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fables-iconmenu-icon text-white font-16"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fablesNavDropdown"> 
+
+                                <ul class="navbar-nav mx-auto fables-nav">   
+                                    <li class="#">
+                                        <a class="nav-link" href="home.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a class="nav-link" href="about.html">
+                                            About Us
+                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="testimonials.html">
+                                            Testmonials
+                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">
+                                            Contact Us
+                                        </a>
+                                    </li>  
+                                </ul> 
+                        </nav>
+                    </div>
+                
+                </div>
+    </div>
+</div>
+                   
+
+<!-- Start Header -->
+<div class="fables-header fables-after-overlay bg-rules">
+    <div class="container"> 
+         <h2 class="fables-page-title fables-second-border-color wow fadeInLeft" data-wow-duration="1.5s">About Us</h2>
+    </div>
+</div>  
+<!-- /End Header -->
+<!-- Start Breadcrumbs -->
+<div class="fables-light-background-color">
+    <div class="container"> 
+        <nav aria-label="breadcrumb">
+          <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+            <li class="breadcrumb-item"><a href="about.html" class="fables-second-text-color">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+          </ol>
+        </nav> 
+    </div>
+</div>
+<!-- /End Breadcrumbs -->
+<!-- Start page content -->  
+<div class="container"> 
+    <div class="row mt-4 my-md-5 overflow-hidden">
+        <div class="col-12 col-md-4 mb-4 mb-md-0 wow fadeInDown" data-wow-delay=".3s">
+            <div class="border p-3 p-md-4 text-center text-lg-left">
+                <div class="row">
+                    <div class="col-12 col-lg-3 text-center mb-3 mb-lg-0">
+                        <span class="fables-iconlamp-icon fables-second-text-color fa-3x"></span>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <h2 class="fables-second-text-color font-20 semi-font mb-3 about-block-heading">Expertise and Experience</h2>
+                        <div class="font-15 fables-forth-text-color">
+                            Our team consists of seasoned professionals who have in-depth knowledge of the global education landscape. We've successfully assisted countless students in finding the right study program, university, and destination to suit their academic and personal goals.  
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0 wow fadeInDown" data-wow-delay=".6s">
+           <div class="border p-3 p-md-4 text-center text-lg-left">
+                <div class="row">
+                    <div class="col-12 col-lg-3 text-center mb-3 mb-lg-0">
+                        <span class="fables-icongears-icon fables-second-text-color fa-3x"></span>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                       <h2 class="fables-second-text-color font-20 semi-font mb-3 about-block-heading">Personalized Approach</h2>
+                       <div class="font-15 fables-forth-text-color">
+                            We understand that every student is unique. That's why we take a personalized approach to every case. We take the time to get to know you, your aspirations, and your preferences. Whether you're looking for undergraduate, postgraduate, or doctoral programs, we tailor our services to match your individual needs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0 wow fadeInDown" data-wow-delay=".9s">
+           <div class="border p-3 p-md-4 text-center text-lg-left">
+                <div class="row">
+                    <div class="col-12 col-lg-3 text-center mb-3 mb-lg-0">
+                        <span class="fables-iconheadset-icon fables-second-text-color fa-3x"></span>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                       <h2 class="fables-second-text-color font-20 semi-font mb-3 about-block-heading">Scholarships and Financial Aid</h2>
+                        <div class="font-15 fables-forth-text-color">
+                            We understand the financial aspects of studying abroad can be a concern for many students. We'll assist you in exploring scholarship opportunities and financial aid options to make your education abroad more affordable. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="fables-bussiness-section bg-rules">
+    <div class="container-fluid">
+        <div class="row overflow-hidden">  
+            <div class=" py-3 py-lg-0 col-sm-6 offset-sm-6 p-sm-0"> 
+                <div class="fables-bussiness-caption p-4" >
+                    <h2 class="fables-second-text-color my-0 font-30 font-weight-bold position-relative z-index wow fadeInRight" data-wow-duration="2s">Empowering African Students Through Global Education: Your Path to Success Abroad</h2>
+                    <div class="fables-forth-text-color position-relative z-index  mt-4 mb-5  wow fadeInRight" data-wow-duration="2s">
+                        In an increasingly interconnected world, studying abroad has emerged as a powerful catalyst for the empowerment of African students. Beyond the pursuit of a degree, it offers a transformative journey that enriches lives and opens doors to a world of opportunities. Through global education, African students gain access to high-quality learning experiences, diverse perspectives, and innovative teaching methods. This exposure not only enhances their academic journey but also equips them with valuable life skills like adaptability and cross-cultural communication. Additionally, studying abroad provides an edge in the competitive job market, fostering personal growth, independence, and a global perspective. The experience of living in a foreign country enriches students' lives and empowers them to contribute meaningfully to Africa's development upon their return.
+                        <br><br>
+                        Choosing the right path is crucial for African students looking to embark on this empowering journey. Partnering with experienced educational consultancies or institutions that understand the unique needs and aspirations of African students is essential. These trusted partners can offer guidance on program selection, scholarship opportunities, visa processes, and post-arrival support, ensuring a seamless transition into global education. As African students pursue their dreams of studying abroad, they not only enhance their own futures but also contribute to the advancement of their communities and the continent as a whole. With a global education, the possibilities are limitless, and the path to success abroad becomes a reality for African students seeking to shape a brighter tomorrow.
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+</div>
+
+<!--Client page--->
+<div class="fables-counter-section fables-counter-no-background mt-5 my-3 my-md-5">
+    <div class="container">
+        <div class="row">
+               <div class="col-6 col-md-3">
+                   <div class="fables-counter">
+                       <h2 class="fables-counter-value font-40 font-weight-bold mb-3 fables-main-text-color border fables-second-border-color d-inline-block px-4 py-2 mb-4" data-count="307">100</h2>
+                       <h3 class="font-14 semi-font fables-forth-text-color">SATISFIED CLIENTS</h3>
+                   </div>
+               </div>
+               <div class="col-6 col-md-3">
+                   <div class="fables-counter">
+                       <h2 class="fables-counter-value font-40 font-weight-bold mb-3 fables-main-text-color border fables-second-border-color d-inline-block px-4 py-2 mb-4" data-count="95">20</h2>
+                       <h3 class="font-14 semi-font fables-forth-text-color">COMPANY MEMBERS</h3>
+                   </div>
+               </div>
+               <div class="col-6 col-md-3">
+                   <div class="fables-counter">
+                       <h2 class="fables-counter-value font-40 font-weight-bold mb-3 fables-main-text-color border fables-second-border-color d-inline-block px-4 py-2 mb-4" data-count="16">2</h2>
+                       <h3 class="font-14 semi-font fables-forth-text-color">YEARS EXPIRIENCE</h3>
+                   </div>
+               </div>
+           </div>
+    </div>
+</div>
+<!-- End Client page--->
+<!-- /End page content -->
+{% endblock %}

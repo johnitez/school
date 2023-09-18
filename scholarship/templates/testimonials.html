@@ -1,0 +1,182 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+
+<div class="search-section">
+    <a class="close-search" href="#"></a>
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <form method="post" action="#" class="w-50">
+            <div class="row">
+                <div class="col-10">
+                    <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." /> 
+                </div>
+                <div class="col-2 mt-3">
+                     <button type="submit" class="btn bg-transparent text-white"> <i class="fas fa-search"></i> </button>
+                </div>
+            </div>
+        </form>
+    </div>
+         
+</div>
+    
+<!-- Loading Screen -->
+<div id="ju-loading-screen">
+  <div class="sk-double-bounce">
+    <div class="sk-child sk-double-bounce1"></div>
+    <div class="sk-child sk-double-bounce2"></div>
+  </div>
+</div>
+    
+<!-- Start Top Header -->
+<div class="fables-forth-background-color fables-top-header-signin">
+    <div class="container">
+        <div class="row" id="top-row">
+            <div class="col-12 col-sm-5 col-lg-4 text-right">
+                <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> Phone :  (+254) 746 471 338</p>
+            </div>
+            <div class="col-12 col-sm-5 col-lg-3 text-right">
+                <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span> Email: 203jmw@gmail.com.com</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+ 
+<!-- /End Top Header -->
+
+<!-- Start Fables Navigation -->
+<div class="fables-navigation fables-main-background-color py-3 py-lg-0">
+    <div class="container">
+               <div class="row">
+                   <div class="col-12 col-md-10 col-lg-9 pr-md-0">                       
+                       <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
+         
+                            <a class="navbar-brand pl-0" href="index.html"><img src="{% static 'usa/assets/custom/images/logo3.png' %}" class="#"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fables-iconmenu-icon text-white font-16"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="fablesNavDropdown"> 
+
+                                <ul class="navbar-nav mx-auto fables-nav">   
+                                    <li class="#">
+                                        <a class="nav-link" href="home.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="#">
+                                        <a class="nav-link" href="about.html">
+                                            About Us
+                                        </a>
+                                    <li class="active">
+                                        <a class="nav-link" href="testimonials.html">
+                                            Testmonials
+                                        </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">
+                                            Contact Us
+                                        </a>
+                                    </li>  
+                                </ul> 
+                        </nav>
+                    </div>
+                
+                </div>
+    </div>
+</div>
+<!-- Start Breadcrumbs -->
+<div class="fables-light-background-color">
+    <div class="container"> 
+        <nav aria-label="breadcrumb">
+          <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+            <li class="breadcrumb-item"><a href="testimonials.html" class="fables-second-text-color">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Testimonials</li>
+          </ol>
+        </nav> 
+    </div>
+</div>
+<!-- /End Breadcrumbs -->
+<!--testimonials start--->
+<div class="container py-3">
+    <div class="fables-Testimonials my-3">             
+       <h3 class="fables-second-text-color mb-5 font-weight-bold"> Testimonials </h3> 
+        <div class="row">
+            <div class="col-6">
+                 <div class="fables-testimonial-block border fables-third-text-color py-4 px-6 mb-4 rounded position-relative">  
+                      <div class="row">
+                          <div class="col-12 col-sm-3 text-center image-container shine-effect">
+                               <img src="{% static 'usa/assets/custom/images/avatar.jpg' %}" alt="Fables Template" class="fables-testimonial-block-img rounded-circle">  
+                          </div>
+                          <div class="col-12 col-sm-8">
+                              <div class="fables-testimonial-block-info">
+                                  <h3 class="fables-forth-text-color mt-4 mb-2 font-15 semi-font">Simon Ndirangu</h3>
+                                  <h3 class="fables-fifth-text-color font-italic font-14 mt-2"></h3>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="fables-forth-text-color font-italic font-14 semi-font mt-3 d-none d-md-block"> 
+                            "Studying abroad was a dream I never thought would come true until I connected with the School Abroad firm. Their guidance and support were invaluable throughout the entire process. From helping me choose the right program to assisting with visa applications, they made the journey smooth. Thanks to them, I am now pursuing my master's degree in Computer Science at a prestigious university in the United States. I couldn't be happier with my decision, and I wholeheartedly recommend the School Abroad firm to any student looking to study overseas."
+                        </div>
+                 </div> 
+            </div>
+            <div class="col-6">
+                 <div class="fables-testimonial-block border fables-third-text-color py-4 px-6 mb-4 rounded position-relative">  
+                      <div class="row">
+                          <div class="col-12 col-sm-3 text-center image-container shine-effect">
+                               <img src="{% static 'usa/assets/custom/images/avatar.jpg' %}" alt="Fables Template" class="fables-testimonial-block-img rounded-circle">  
+                          </div>
+                          <div class="col-12 col-sm-8">
+                              <div class="fables-testimonial-block-info">
+                                  <h3 class="fables-forth-text-color mt-4 mb-2 font-15 semi-font">Margaret Wairimu</h3>
+                                  <h3 class="fables-fifth-text-color font-italic font-14 mt-2"></h3>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="fables-forth-text-color font-italic font-14 semi-font mt-3 d-none d-md-block"> 
+                            "I had always wanted to explore the world through education, but the process of studying abroad seemed overwhelming. That's when I discovered the School Abroad firm. They not only simplified the entire application process but also helped me secure a scholarship that made my dream affordable. Today, I am pursuing a degree in International Relations in the United Kingdom, and I owe it all to their unwavering support and expertise. If you're an aspiring international student, I highly recommend partnering with the School Abroad firm; they make dreams come true."
+                        </div>
+                 </div> 
+            </div>
+            <div class="col-6">
+                 <div class="fables-testimonial-block border fables-third-text-color py-4 px-6 mb-4 rounded position-relative">
+                      <div class="row">
+                          <div class="col-12 col-sm-3 text-center image-container shine-effect">
+                               <img src="{% static 'usa/assets/custom/images/avatar.jpg' %}" alt="Fables Template" class="fables-testimonial-block-img rounded-circle">  
+                          </div>
+                          <div class="col-12 col-sm-8">
+                              <div class="fables-testimonial-block-info">
+                                  <h3 class="fables-forth-text-color mt-4 mb-2 font-15 semi-font">Dennis Ogama</h3>
+                                  <h3 class="fables-fifth-text-color font-italic font-14 mt-2"></h3>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="fables-forth-text-color font-italic font-14 semi-font mt-3 d-none d-md-block"> 
+                            "My journey to study abroad was full of uncertainties until I found the School Abroad firm. Their team of experts provided me with step-by-step guidance, ensuring that I was well-prepared for each phase of the application process. With their assistance, I secured admission to a top-notch engineering program in Canada. The School Abroad firm's professionalism and dedication are unmatched, and I am grateful for their role in helping me achieve my academic goals. I wholeheartedly endorse them to any student seeking to study abroad."
+                        </div>
+                 </div> 
+            </div>
+            <div class="col-6">
+                 <div class="fables-testimonial-block border fables-third-text-color py-4 px-6 mb-4 rounded position-relative"> 
+                      <div class="row">
+                          <div class="col-12 col-sm-3 text-center image-container shine-effect">
+                               <img src="{% static 'usa/assets/custom/images/avatar.jpg' %}" alt="Fables Template" class="fables-testimonial-block-img rounded-circle">  
+                          </div>
+                          <div class="col-12 col-sm-8">
+                              <div class="fables-testimonial-block-info">
+                                  <h3 class="fables-forth-text-color mt-4 mb-2 font-15 semi-font">Timothy Musyoka</h3>
+                                  <h3 class="fables-fifth-text-color font-italic font-14 mt-2"></h3>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="fables-forth-text-color font-italic font-14 semi-font mt-3 d-none d-md-block"> 
+                            "Choosing to study abroad was a major decision, and I couldn't have made it without the School Abroad firm. From the initial consultation to my first day on campus in Australia, their support was exceptional. They provided personalized advice, helped me navigate the visa application process, and even organized pre-departure orientations. Today, I'm pursuing my dream of a business degree in Melbourne, and I have the School Abroad firm to thank for making it all possible. If you're considering studying abroad, I can't recommend them enough. They truly care about your success."
+                        </div>
+                 </div> 
+            </div>
+        </div> 
+ 
+    </div>  
+</div>            
+<!---end testimonials page--->
+{% endblock %}
